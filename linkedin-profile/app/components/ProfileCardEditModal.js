@@ -21,15 +21,15 @@ const ProfileCardEditModal = ({ setIsOpen }) => {
 
 
     return (
-        <div className="w-full h-full flex items-center justify-center">
-            <div className="w-3/6 h-3/6 mx-auto my-auto flex flex-col justify-center items-center">
-            <input className="m-14 p-2 border border-slate-700" id="name" placeholder="Name" 
+        <div className="w-full h-full mx-auto my-auto flex items-center justify-center">
+            <div className="w-full h-full mx-auto my-auto flex flex-col justify-center items-center">
+            <input className="my-5 p-2 border border-slate-700" id="name" placeholder="Name" 
                 value={nameInput} onChange={(e) => setNameInput(e.target.value)}>    
             </input>
-            <input className="m-14 p-2 border border-slate-700" id="designation" placeholder="Designation"
+            <input className="mb-5 p-2 border border-slate-700" id="designation" placeholder="Designation"
                 value={desiInput} onChange={(e) => setDesiInput(e.target.value)}>
             </input>
-            <input className="m-14 p-2 border border-slate-700" id="location" placeholder="Location"
+            <input className="mb-5 p-2 border border-slate-700" id="location" placeholder="Location"
                 value={locInput} onChange={(e) => setLocInput(e.target.value)}>
             </input>
             <button className="m-5 bg-slate-950 text-white w-max h-max px-3 py-1" onClick={handleSubmit}>Submit</button>
