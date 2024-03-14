@@ -1,0 +1,1 @@
+export const MONGOURL = "mongodb+srv://admin:FRL8e86CHET20Xfl@cluster0.sgf6vcz.mongodb.net/linkedInClone";

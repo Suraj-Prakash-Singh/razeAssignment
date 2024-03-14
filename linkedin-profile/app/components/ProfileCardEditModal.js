@@ -3,7 +3,6 @@ import profileCardContext from "../utils/profileCardContext";
 import { useContext } from "react";
 
 const ProfileCardEditModal = ({ setIsOpen }) => {
-    console.log("ProfileCardModal render");
     const [nameInput, setNameInput] = useState("");
     const [desiInput, setDesiInput] = useState("");
     const [locInput, setLocInput] = useState("");
@@ -21,7 +20,7 @@ const ProfileCardEditModal = ({ setIsOpen }) => {
 
 
     return (
-        <div className="w-full h-full mx-auto my-auto flex items-center justify-center">
+        <div className="w-screen h-screen bg-[rgba(49,49,49,0.8)] fixed left-0 right-0 top-0 bottom-0 flex items-center justify-center">
             <div className="w-full h-full mx-auto my-auto flex flex-col justify-center items-center">
             <input className="my-5 p-2 border border-slate-700" id="name" placeholder="Name" 
                 value={nameInput} onChange={(e) => setNameInput(e.target.value)}>    
